@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">photophoto</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- General settings -->
+    <string name="pref_header_picture">Picture</string>
+    <string name="pref_header_metadata">Metadata</string>
+    <string name="pref_header_encryption">Encryption</string>
+
+    <!-- Settings for Metadata -->
+    <string name="pref_metadata_marker">Enable markers</string>
+    <string name="pref_description_metadata_marker">Creates metadata entries
+        indicating presence of hidden content.
+    </string>
+
+    <string name="pref_metadata_marker_text">Marker text</string>
+    <string name="pref_default_metadata_marker_text">PhotoPhoto powered!</string>
+
+    <string name="pref_metadata_marker_date">Date</string>
+    <string name="pref_description_metadata_marker_date">Creates metadata entry with current date</string>
+
+    <string name="pref_metadata_marker_gps">GPS</string>
+    <string name="pref_description_metadata_marker_gps">Creates metadata entry with GPS coordinates</string>
+
+    <!-- Settings for Picture -->
+    <string name="pref_default_picture_prefix">photo-photo</string>
+    <string name="pref_picture_prefix">Picture file prefix</string>
+
+    <string name="pref_default_hidden_picture_exposure">1000</string>
+    <string name="pref_picture_exposure">Hidden picture exposure time</string>
+    <string name="pref_description_hidden_picture_exposure">Time in milliseconds determining how long picture to be hidden will be exposed.</string>
+
+    <string name="pref_picture_immediate_capture">Immedaite capture</string>
+    <string name="pref_description_picture_immediate_capture">Picture to be hidden will be taken immediately after taking the main picture.</string>
+
+    <string name="pref_picture_preview">Hidden picture preview</string>
+    <string name="pref_description_picture_preview">Picture to be hidden will be briefly previewed after taking the main picture.</string>
+
+    <string name="pref_picture_mainres">Main picture resolution</string>
+    <string name="pref_picture_hiddenres">Hidden picture resolution</string>
+    <string-array name="pref_picture_mainres_titles">
+        <item>Unknown</item>
+    </string-array>
+    <string-array name="pref_picture_mainres_values">
+        <item>Unknown</item>
+    </string-array>
+    <string-array name="pref_picture_hiddenres_titles">
+        <item>Unknown</item>
+    </string-array>
+    <string-array name="pref_picture_hiddenres_values">
+        <item>Unknown</item>
+    </string-array>
+
+    <string name="pref_picture_channel_bit_title">Hiding space</string>
+    <string name="pref_picture_channel_bit_summary">Define available hiding space on each pixel</string>
+    <string name="pref_picture_channel_bit_default">4</string>
+    <string-array name="pref_picture_channel_bits">
+        <item>Tiny amount\n3 bits per pixel</item>
+        <item>Small amount\n6 bits per pixel</item>
+        <item>Medium amount\n9 bits per pixel</item>
+        <item>Big amount\n12 bits per pixel</item>
+        <item>Huge amount\n15 bits per pixel</item>
+    </string-array>
+    <string-array name="pref_picture_channel_bit_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <!-- Settings for Encryption -->
+    <string name="pref_encryption_enabled">Enable encryption</string>
+    <string name="pref_description_encryption_enabled">Before hiding, picture will be encrypted</string>
+
+    <string name="pref_encryption_password">Encryption password</string>
+    <string name="pref_default_encryption_password">PhotoPhoto-SecretPassword-12399</string>
+    <string name="take_picture_button_text">Take picture</string>
+    <string name="decode_picture_button_text">Decode picture</string>
+    <string name="settings_button_text">Settings</string>
+
+</resources>

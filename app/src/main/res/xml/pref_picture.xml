@@ -1,0 +1,67 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- NOTE: Hide buttons to simplify the UI. Users can touch outside the dialog to
+         dismiss it. -->
+    <!-- NOTE: ListPreference's summary should be set to its value by the activity code. -->
+    <ListPreference
+        android:entries="@array/pref_picture_mainres_titles"
+        android:entryValues="@array/pref_picture_mainres_values"
+        android:key="pl.edu.pw.mmajews2.photophoto.picture.main.resolution"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/pref_picture_mainres" />
+
+    <ListPreference
+        android:entries="@array/pref_picture_hiddenres_titles"
+        android:entryValues="@array/pref_picture_hiddenres_values"
+        android:key="pl.edu.pw.mmajews2.photophoto.picture.hidden.resolution"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/pref_picture_hiddenres"
+        android:dependency="pl.edu.pw.mmajews2.photophoto.picture.main.resolution" />
+
+    <ListPreference
+        android:entries="@array/pref_picture_channel_bits"
+        android:entryValues="@array/pref_picture_channel_bit_values"
+        android:key="pl.edu.pw.mmajews2.photophoto.picture.channel_bits"
+        android:title="@string/pref_picture_channel_bit_title"
+        android:summary="@string/pref_picture_channel_bit_summary"
+        android:defaultValue="@string/pref_picture_channel_bit_default"/>
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:enabled="false"
+        android:key="pl.edu.pw.mmajews2.photophoto.picture.hidden.immediate_capture"
+        android:summary="@string/pref_description_picture_immediate_capture"
+        android:title="@string/pref_picture_immediate_capture" />
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:enabled="false"
+        android:key="pl.edu.pw.mmajews2.photophoto.picture.hidden.preview"
+        android:summary="@string/pref_description_picture_preview"
+        android:title="@string/pref_picture_preview" />
+
+    <EditTextPreference
+        android:capitalize="none"
+        android:inputType="number"
+        android:key="pl.edu.pw.mmajews2.photophoto.picture.exposure"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_picture_exposure"
+        android:defaultValue="@string/pref_default_hidden_picture_exposure"
+        android:summary="@string/pref_description_hidden_picture_exposure"/>
+
+    <EditTextPreference
+        android:capitalize="none"
+        android:defaultValue="@string/pref_default_picture_prefix"
+        android:inputType="text"
+        android:key="pl.edu.pw.mmajews2.photophoto.picture.file_prefix"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_picture_prefix" />
+
+
+</PreferenceScreen>
